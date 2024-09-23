@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> 3-column preview card </title>
+  <link href=
+"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          Brightorange:'hsl(31, 77%, 52%)',
+             Darkcyan: 'hsl(184, 100%, 22%)',
+            Verydarkcyan: 'hsl(179, 100%, 13%)',
+            screens: {
+             'sm': '576px',
+              'md': '960px',
+              'lg': '1440px',
+            }
+        }
+      }
+    }
+  }
+</script>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class=""> 
+  <div class="  pt-40 -pb-40  space-x-0 space-y-0 flex justify-center flex-col md:flex-row  ">
+    <div class="  pt-20 -pl-14 pr-20 -pb-32 w-15 h-96 bg-Brightorange   ">
+      <img src="images/icon-sedans.svg" class="h-15 w-12 pt-2 -mt-10 ml-10 ">
+        <p class=" text-xl font-bold  pt-8  ml-10 text-start text-white"> SEDANS </p>
+        <p class="text-sm text-light text-white pt-10 ml-10 w-40 -mb-5 -mt-8  size-32 ">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.
+        </p>
+        <button class="mt-24 rounded-full bg-white text-Brightorange text-base w-32  h-8 ml-12"> Learn More </button>
+    </div>
+    <div class=" pr-38 pl-60 pb-45 m-30 h-96  bg-Darkcyan ">
+      <img src="images/icon-suvs.svg" class=" pt-11  min-h-16 min-w-11 -ml-48">
+        <p class=" text-xl text-white font-bold text-start pt-10  -ml-48 "> SUVS </p>
+        <p class="text-white text-light text-sm size-32 w-44 -ml-48 mr-10 pt-5  text-centre ">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.
+        </p>
+        <button class="rounded-full bg-white text-Darkcyan text-base w-32 h-8 -ml-44 mt-12  "> Learn More </button>
+    </div>
+    <div class=" pr-20 pl-28 pb-80 m-40 h-96 bg-Verydarkcyan ">
+      <img src="images/icon-luxury.svg" class=" pt-11  -ml-24 min-h-5 w-12">
+        <p class=" text-xl font-bold text-white text-start pt-10 -ml-20 pt-10"> LUXURY</p>
+        <p class="text-white text-light text-sm size-28 w-44 -ml-20 pt-5 -mr-9">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.
+        </p>
+        <button class="rounded-full bg-white text-Verydarkcyan text-base w-32 h-8 mt-14 -ml-16"> Learn More </button>
+    </div>
+</div>
+</div>
+<div class="attribution"  >
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Jonathan Oluwateniola</a>.
+</div>
+  
+  
+
+</body>
+</html>
